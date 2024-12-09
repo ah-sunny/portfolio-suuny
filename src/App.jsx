@@ -2,6 +2,7 @@ import AboutMe from "./component/AboutMe"
 import Banner from "./component/Banner"
 import ContactMe from "./component/ContactMe"
 import MyProject from "./component/MyProject"
+import MySkill from "./component/MySkill"
 import Stats from "./component/Stats"
 
 
@@ -17,6 +18,7 @@ function App() {
         <Stats></Stats>
         <AboutMe></AboutMe>
         <MyProject></MyProject>
+        <MySkill></MySkill>
         <ContactMe></ContactMe>
       </div>
      

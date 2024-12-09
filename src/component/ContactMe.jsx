@@ -1,15 +1,44 @@
+import { FaMapLocationDot, FaPhoneVolume } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 
 
 const ContactMe = () => {
     return (
-        <div>
+        <div className="text-gray-200 pb-10 ">
             <div>
-                <h1 className="text-3xl font-bold text-center mx-auto my-5" >Get in Touch</h1>
-
+                <h1 className="w-auto  lg:w-[22%] text-lg lg:text-5xl font-bold text-center mx-auto my-5 border-b-2 border-dashed pb-4 " >Get in Touch</h1>
             </div>
 
             <div>
-                <div className="hero bg-base-200 min-h-screen">
+
+                <div className="border-2 border-gray-700 p-10 rounded-md w-[60%] mx-auto ">
+                    <div className="w-fit mx-auto">
+                        <h1 className="text-3xl font-bold mb-7">Contact Me For More Info </h1>
+                        <div className="space-y-3 ">
+
+
+                            <div className="flex items-center gap-2">
+                                <FaMapLocationDot />
+                                <p>Nabinagar , Savar , Dhaka</p>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <FaPhoneVolume />
+                                <p>
+                                    +8801601707200
+                                </p>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <MdEmail />
+                                <p>sunnycse03@gmail.com</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+                {/* <div className="hero  my-12">
                     <div className="hero-content flex-col lg:flex-row-reverse">
                         <div className="text-center lg:text-left">
                             <h1 className="text-5xl font-bold">Login now!</h1>
@@ -41,7 +70,7 @@ const ContactMe = () => {
                             </form>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );
