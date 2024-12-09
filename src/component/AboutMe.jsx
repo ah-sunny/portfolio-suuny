@@ -4,15 +4,15 @@ const AboutMe = () => {
     return (
         <div className="text-gray-200">
             <div>
-                <h1 className="w-auto lg:w-[22%] text-lg lg:text-5xl font-bold text-center mx-auto my-5 border-b-2 border-dashed pb-4 " >About me</h1>
+                <h1 className="w-auto lg:w-[22%] text-2xl lg:text-5xl font-bold text-center mx-auto my-5 border-b-2 border-dashed pb-4 " >About me</h1>
             </div>
-            <div className="flex justify-between items-center gap-12 pt-10">
+            <div className="flex flex-col lg:flex-row justify-between items-center gap-12  pt-10">
                 {/* left */}
-                <div className="w-[30%]">
+                <div className="w-[95%] lg:w-[30%]">
                     <img src={aboutMeImg} alt="" />
                 </div>
                 {/* right */}
-                <div className="w-[60%] ">
+                <div className="w-[95%] lg:w-[60%] ">
                     <p>
                     A dedicated Frontend React Developer passionate about creating dynamic and responsive web applications. With a solid foundation in MongoDB, Express.js, React, JavaScript ,Node.js, & Next JS . I bring a comprehensive approach to building full-stack solutions.
                     <br />

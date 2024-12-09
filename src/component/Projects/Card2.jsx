@@ -4,13 +4,13 @@ const Card2 = () => {
     return (
         <div>
             <div className="card lg:card-side bg-base-100 shadow-xl">
-                <figure className="w-[65%] px2">
+                <figure className="w-auto lg:w-[65%] px-2">
                     <img className=" h-80"
                         src={parcel}
                         alt="Album" />
                 </figure>
 
-                <div className="w-[34%] p-2 space-y-3 ">
+                <div className="w-auto lg:w-[34%] p-2 space-y-3 ">
                     <h1 className="text-3xl font-bold pt-2 " >Safety Move</h1>
 
                     <div>

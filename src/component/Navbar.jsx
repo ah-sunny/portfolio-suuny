@@ -26,10 +26,10 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            className="menu menu-sm dropdown-content bg-base-100 font-bold text-black rounded-box z-[1] mt-3 w-52 p-2 shadow">
                             <li><NavLink to="/" >Home</NavLink></li>
-                            <li><NavLink to="/about" > Projects</NavLink></li>
-                            <li><NavLink to="/products" >About</NavLink></li>
+                            <li><NavLink to="/projects" > Projects</NavLink></li>
+                            <li><NavLink to="/about" >About</NavLink></li>
                             <li><NavLink to="/contact-me" >Contact</NavLink></li>
                         </ul>
                     </div>
@@ -40,15 +40,15 @@ const Navbar = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                     <li><NavLink to="/" >Home</NavLink></li>
-                            <li><NavLink to="/about" > Projects</NavLink></li>
-                            <li><NavLink to="/products" >About</NavLink></li>
+                            <li><NavLink to="/projects" > Projects</NavLink></li>
+                            <li><NavLink to="/about" >About</NavLink></li>
                             <li><NavLink to="/contact-me" >Contact</NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end gap-3">
                     
-                    <Link  to="https://linkedin.com/in/-sunny" > <BsLinkedin className="size-4 lg:size-6" /> </Link>
-                    <Link  to="https://github.com/ah-sunny" > <FaGithub className="size-4 lg:size-6" /> </Link>
+                    <Link  to="https://linkedin.com/in/-sunny" > <BsLinkedin className="size-4 lg:size-7" /> </Link>
+                    <Link  to="https://github.com/ah-sunny" > <FaGithub className="size-4 lg:size-7" /> </Link>
                    
 
                    

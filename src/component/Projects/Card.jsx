@@ -4,13 +4,13 @@ const Card = () => {
     return (
         <div>
             <div className="card lg:card-side bg-base-100 shadow-xl">
-                <figure className="w-[65%] px2">
+                <figure className="w-auto lg:w-[65%] px-2">
                     <img className=" h-96"
                         src={blog}
                         alt="Album" />
                 </figure>
 
-                <div className="w-[30%]  space-y-3 ">
+                <div className="w-auto lg:w-[30%]  space-y-3 ">
                     <h1 className="text-3xl font-bold pt-4 " >Blog Website</h1>
 
                     <div>

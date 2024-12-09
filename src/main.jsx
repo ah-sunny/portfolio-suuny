@@ -11,6 +11,9 @@ import {
 import "./index.css";
 import ContactMe from './component/ContactMe.jsx';
 import MainLayout from './layout/MainLayout.jsx';
+import MyProject from './component/MyProject.jsx';
+import AboutMe from './component/AboutMe.jsx';
+import MySkill from './component/MySkill.jsx';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +27,18 @@ const router = createBrowserRouter([
       {
         path: "/contact-me",
         element: <ContactMe></ContactMe>
+      },
+      {
+        path: '/projects',
+        element: <MyProject></MyProject>
+      },
+      {
+        path: "/about",
+        element: <AboutMe></AboutMe>
+      },
+      {
+        path: "/my-skill",
+        element: <MySkill></MySkill>
       }
     ]
   },
