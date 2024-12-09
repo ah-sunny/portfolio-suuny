@@ -49,7 +49,7 @@ const Banner = () => {
 
             {/*  image part*/}
             <div className="w-auto lg:w-[30%] rounded-xl   ">
-                <img className="h-[360px] w-72 lg:m-4 border-2 border-gray-400  lg:rotate-12 hover:rotate-0  rounded-2xl object-cover 
+                <img className="h-[360px] w-72 lg:m-4 border-2 border-gray-400  lg:rotate-6 hover:rotate-0  rounded-2xl object-cover 
                 hover:transition
                    "
                     src={sunnyImg} alt="sunny" />

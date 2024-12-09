@@ -9,7 +9,7 @@ const MyProject = () => {
                 <h1 className="w-auto lg:w-[22%] text-2xl lg:text-5xl font-bold text-center mx-auto my-5 border-b-2 border-dashed pb-4 text-gray-200 " > My Projects </h1>
             </div>
             {/*  */}
-            <div className="p-1 lg:p-0 pt-12 grid grid-cols-1 lg:grid-cols-2 gap-5">
+            <div className="p-1 lg:pt-12 grid grid-cols-1 lg:grid-cols-2 gap-5">
                 <Card2></Card2>
                 <Card></Card>
                <Card3></Card3>
