@@ -7,7 +7,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        sans: "JetBrains Mono, system-ui, sans-serif",
+      }
+    },
   },
   plugins: [daisyui],
 }
