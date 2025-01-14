@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.text-outline{
+  -webkit-text-stroke: 1px #ffffff;
+}
+.text-outline-hover{
+  -webkit-text-stroke: 1px #055535;
+}
 
 @font-face {
     font-family: "JetBrains Mono";   /*Can be any text*/

@@ -13,6 +13,11 @@ const AboutMe = () => {
                 </div>
                 {/* right */}
                 <div className="w-[95%] lg:w-[60%] ">
+                    <div className="flex justify-between text-xl mb-7">
+                        <div>edu</div>
+                        <div>exp</div>
+                        <div>skill</div>
+                    </div>
                     <p>
                     A dedicated Frontend React Developer passionate about creating dynamic and responsive web applications. With a solid foundation in MongoDB, Express.js, React, JavaScript ,Node.js, & Next JS . I bring a comprehensive approach to building full-stack solutions.
                     <br />
