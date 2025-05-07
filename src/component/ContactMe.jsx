@@ -95,7 +95,7 @@ const ContactMe = () => {
                       </label>
                       <label className="floating-label mt-2  ">
                         <span >Name</span>
-                        <input type="text" name="name" placeholder="type your name" className="input w-full  border-b-4 focus:outline-none " />
+                        <input type="text" name="name" placeholder="type your name" className="input w-full  border-b-4 focus:outline-none " required />
                       </label>
                     </div>
 
@@ -105,7 +105,7 @@ const ContactMe = () => {
                       </label>
                       <label className="floating-label mt-2  ">
                         <span >Your Mail</span>
-                        <input type="text" name="email" placeholder="mail@site.com" className="input  border-b-4 w-full focus:outline-none " />
+                        <input type="text" name="email" placeholder="mail@site.com" className="input  border-b-4 w-full focus:outline-none " required />
                       </label>
                     </div>
 
@@ -119,7 +119,7 @@ const ContactMe = () => {
                           rows="4"
                           name="message"
                           placeholder="Type your text here..."
-                          className="textarea textarea-bordered border-b-4  w-full focus:outline-none  "
+                          className="textarea textarea-bordered border-b-4  w-full focus:outline-none " required
                         ></textarea>
                         {/* <input type="text" placeholder="type your message" className="textarea h-36 input input-lg focus:outline-none " /> */}
                       </label>

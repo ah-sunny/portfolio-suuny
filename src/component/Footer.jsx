@@ -7,7 +7,7 @@ import logo from "../assets/logo.png"
 const Footer = () => {
     return (
         <div>
-            <footer className="footer bg-neutral text-neutral-content items-center m-0 p-4">
+            <footer className="footer bg-neutral text-neutral-content items-center m-0 p-4 flex flex-col lg:flex-row">
                 <aside className="grid-flow-col items-center">
                 <a className=" text-xs lg:text-base uppercase font-bold flex gap-2 items-center">
                         <img className="size-7 lg:size-8 " src={logo} alt="logo" />
