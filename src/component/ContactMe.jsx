@@ -1,9 +1,43 @@
 // import { BsLinkedin } from "react-icons/bs";
+import React from "react";
 import { FaMapLocationDot, FaPhoneVolume } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 // import { Link } from "react-router-dom";
 
 const ContactMe = () => {
+
+
+
+
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "c258c0f4-9700-423f-bc2b-68694d1b3be7");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
+
+
+
+
   return (
     <div className="text-gray-200 pb-10 ">
       <div>
@@ -48,51 +82,53 @@ const ContactMe = () => {
             </div>
 
             {/* contact for */}
-            <div className="w-full">
+            <div className="w-full  border-t-8 rounded-3xl border-red-900 p-5">
               <div className="hero  text-black">
                 <div className="card bg-base-100 w-full shrink-0 shadow-2xl">
 
                   
-                  <form className="card-body ">
+                  <form onSubmit={onSubmit} className="card-body ">
                   <h1 className="text-4xl mb-10">Send Message</h1>
                     <div className="form-control  mb-2.5 ">
                       <label className="label">
-                        <span className="label-text text-lg text-black ">Full Name : </span>
+                        <span className="label-text text-md text-black ">Full Name : </span>
                       </label>
                       <label className="floating-label mt-2  ">
                         <span >Name</span>
-                        <input type="text" placeholder="type your name" className="input w-full focus:outline-none " />
+                        <input type="text" name="name" placeholder="type your name" className="input w-full  border-b-4 focus:outline-none " />
                       </label>
                     </div>
 
                     <div className="form-control mb-2.5 ">
                       <label className="label">
-                        {/* <span className="label-text text-lg text-black ">Email Address : </span> */}
+                        <span className="label-text text-md text-black ">Email Address : </span>
                       </label>
                       <label className="floating-label mt-2  ">
                         <span >Your Mail</span>
-                        <input type="text" placeholder="mail@site.com" className="input border-none border-b-4 border-red-800 w-full focus:outline-none " />
+                        <input type="text" name="email" placeholder="mail@site.com" className="input  border-b-4 w-full focus:outline-none " />
                       </label>
                     </div>
 
                     <div className="form-control mb-4">
                       <label className="label">
-                        <span className="label-text text-lg text-black ">Your Message : </span>
+                        <span className="label-text text-md text-black ">Your Message : </span>
                       </label>
                       <label className="floating-label mt-2  ">
                         <span >message</span>
                         <textarea
-                          rows="7"
+                          rows="4"
+                          name="message"
                           placeholder="Type your text here..."
-                          className="textarea textarea-bordered  w-full focus:outline-none  "
+                          className="textarea textarea-bordered border-b-4  w-full focus:outline-none  "
                         ></textarea>
                         {/* <input type="text" placeholder="type your message" className="textarea h-36 input input-lg focus:outline-none " /> */}
                       </label>
                     </div>
                     <div className="form-control">
-                      <button className="btn btn-primary">send</button>
+                      <button type="submit" className="btn btn-primary">send</button>
                     </div>
                   </form>
+                  <span>{result}</span>
                 </div>
               </div>
             </div>
