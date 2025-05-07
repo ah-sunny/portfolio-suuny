@@ -1,7 +1,7 @@
-import { BsLinkedin } from "react-icons/bs";
-import { FaGithub, FaMapLocationDot, FaPhoneVolume } from "react-icons/fa6";
+// import { BsLinkedin } from "react-icons/bs";
+import { FaMapLocationDot, FaPhoneVolume } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const ContactMe = () => {
   return (
@@ -13,12 +13,16 @@ const ContactMe = () => {
       </div>
 
       <div>
-        <div className="border-2 border-gray-700 p-3 lg:p-10 rounded-md w-auto lg:w-[60%] mx-auto ">
-          <div className="w-fit mx-auto">
-            <h1 className="text-xl lg:text-3xl font-bold mb-7">
-              Contact Me For More Info{" "}
-            </h1>
-            <div className="space-y-3 ">
+        <div className="border-2 border-gray-700 p-3 lg:p-10 rounded-md w-auto lg:w-[90%] mx-auto mt-14 ">
+          {/* <h1 className="text-xl lg:text-3xl font-bold mb-7">
+            Contact Me For More Info{" "}
+          </h1> */}
+
+
+          <div className="w-full mx-auto bg-green-800 flex gap-5 justify-between">
+
+            {/* left side  */}
+            <div className="w-full space-y-3 bg-orange-500">
               <div className="flex items-center gap-2">
                 <FaMapLocationDot />
                 <p>Nabinagar , Savar , Dhaka</p>
@@ -31,7 +35,7 @@ const ContactMe = () => {
                 <MdEmail />
                 <p>sunnycse03@gmail.com</p>
               </div>
-              <div className="p-1 lg:pl-44 pt-7 flex gap-10">
+              {/* <div className="p-1 lg:pl-44 pt-7 flex gap-10">
                 <Link to="https://linkedin.com/in/-sunny">
                   {" "}
                   <BsLinkedin className="size-4 lg:size-10" />{" "}
@@ -40,45 +44,68 @@ const ContactMe = () => {
                   {" "}
                   <FaGithub className="size-4 lg:size-10" />{" "}
                 </Link>
+              </div> */}
+            </div>
+
+            {/* contact for */}
+            <div className="w-full">
+              <div className="hero  text-black">
+                <div className="card bg-base-100 w-full shrink-0 shadow-2xl">
+
+                  
+                  <form className="card-body ">
+                  <h1 className="text-4xl mb-10">Send Message</h1>
+                    <div className="form-control  mb-2.5 ">
+                      <label className="label">
+                        <span className="label-text text-lg text-black ">Full Name : </span>
+                      </label>
+                      <label className="floating-label mt-2  ">
+                        <span >Name</span>
+                        <input type="text" placeholder="type your name" className="input w-full focus:outline-none " />
+                      </label>
+                    </div>
+
+                    <div className="form-control mb-2.5 ">
+                      <label className="label">
+                        {/* <span className="label-text text-lg text-black ">Email Address : </span> */}
+                      </label>
+                      <label className="floating-label mt-2  ">
+                        <span >Your Mail</span>
+                        <input type="text" placeholder="mail@site.com" className="input border-none border-b-4 border-red-800 w-full focus:outline-none " />
+                      </label>
+                    </div>
+
+                    <div className="form-control mb-4">
+                      <label className="label">
+                        <span className="label-text text-lg text-black ">Your Message : </span>
+                      </label>
+                      <label className="floating-label mt-2  ">
+                        <span >message</span>
+                        <textarea
+                          rows="7"
+                          placeholder="Type your text here..."
+                          className="textarea textarea-bordered  w-full focus:outline-none  "
+                        ></textarea>
+                        {/* <input type="text" placeholder="type your message" className="textarea h-36 input input-lg focus:outline-none " /> */}
+                      </label>
+                    </div>
+                    <div className="form-control">
+                      <button className="btn btn-primary">send</button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
+
+
+
           </div>
         </div>
-
-        {/* <div className="hero  my-12">
-                    <div className="hero-content flex-col lg:flex-row-reverse">
-                        <div className="text-center lg:text-left">
-                            <h1 className="text-5xl font-bold">Login now!</h1>
-                            <p className="py-6">
-                                Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                                quasi. In deleniti eaque aut repudiandae et a id nisi.
-                            </p>
-                        </div>
-                        <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                            <form className="card-body">
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Email</span>
-                                    </label>
-                                    <input type="email" placeholder="email" className="input input-bordered" required />
-                                </div>
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Password</span>
-                                    </label>
-                                    <input type="password" placeholder="password" className="input input-bordered" required />
-                                    <label className="label">
-                                        <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                                    </label>
-                                </div>
-                                <div className="form-control mt-6">
-                                    <button className="btn btn-primary">Login</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div> */}
       </div>
+
+
+
+
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import aboutMeImg from "../assets/aboutMe.png"
+// import IconDesign from "./Icon/IconDesign";
 
 const AboutMe = () => {
     return (
@@ -18,9 +19,12 @@ const AboutMe = () => {
                         <div>exp</div>
                         <div>skill</div>
                     </div>
+                    
                     <p>
                     A dedicated Frontend React Developer passionate about creating dynamic and responsive web applications. With a solid foundation in MongoDB, Express.js, React, JavaScript ,Node.js, & Next JS . I bring a comprehensive approach to building full-stack solutions.
                     <br />
+
+                  
                     I consider myself a quick learner, self-motivated, responsible, and disciplined person who can work under pressure and solve problems in critical situations with analytical knowledge and the latest technology.
                     </p>
                 </div>
