@@ -59,7 +59,7 @@ const Stats = () => {
               className="stat-value text-6xl mb-3 text-outline text-transparent"
               suffix="+"
             ></CountUp> 
-            <div className="stat-title text-white text-lg lg:text-3xl font-extrabold -tracking-wider ">
+            <div className="stat-title text-white text-lg lg:text-2xl font-extrabold -tracking-wider ">
               {item.text}
             </div>
           </div>

@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
+import Home from './Home.jsx'
 
 
 import {
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <App></App>
+        element: <Home></Home>
       },
       {
         path: "/contact-me",

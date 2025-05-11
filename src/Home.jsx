@@ -7,7 +7,7 @@ import Photo from "./component/Photo"
 import Stats from "./component/Stats"
 
 
-function App() {
+function Home() {
 
 
   return (
@@ -31,4 +31,4 @@ function App() {
   )
 }
 
-export default App
+export default Home

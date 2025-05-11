@@ -1,7 +1,9 @@
 // import { BsLinkedin } from "react-icons/bs";
 import React from "react";
-import { FaMapLocationDot, FaPhoneVolume } from "react-icons/fa6";
+import { BsLinkedin } from "react-icons/bs";
+import { FaGithub, FaMapLocationDot, FaPhoneVolume } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 
 const ContactMe = () => {
@@ -53,38 +55,45 @@ const ContactMe = () => {
           </h1> */}
 
 
-          <div className="w-full mx-auto bg-green-800 flex gap-5 justify-between">
+          <div className="w-full mx-auto  flex flex-col lg:flex-row gap-5 justify-between">
 
             {/* left side  */}
-            <div className="w-full space-y-3 bg-orange-500">
-              <div className="flex items-center gap-2">
-                <FaMapLocationDot />
-                <p>Nabinagar , Savar , Dhaka</p>
+            <div className="w-full space-y-3 pt-4 ">
+
+              <div className="space-y-0.5 p-4 gap-2 border-2 border-gray-200 rounded-md bg-[#FDDD5F1A] ">
+                <FaPhoneVolume className="text-green-800 size-11"/>
+                <p className="font-thin text-sm   ">Phone Number :</p>
+                <p className="text-lg">(+880) 1601707200 <span className="font-thin text-xs">(whatsapp)</span></p>
               </div>
-              <div className="flex items-center gap-2">
-                <FaPhoneVolume />
-                <p>+8801601707200</p>
+              <div className="space-y-0.5 p-4 gap-2 border-2 border-gray-200 rounded-md bg-[#2d75222b]">
+                <MdEmail className="text-yellow-700 size-11"/>
+                <p className="font-thin text-sm  ">Email :</p>
+                <p className="text-lg" >sunnycse03@gmail.com</p>
               </div>
-              <div className="flex items-center gap-2">
-                <MdEmail />
-                <p>sunnycse03@gmail.com</p>
+              <div className="space-y-0.5 p-4 gap-2 border-2 border-gray-200 rounded-md bg-[#629CF31A]">
+                <FaMapLocationDot className="text-gray-300 size-11"/>
+                <p className="font-thin text-sm  ">Location :</p>
+                <p className="text-lg">Nabinagar, Savar, Dhaka</p>
               </div>
-              {/* <div className="p-1 lg:pl-44 pt-7 flex gap-10">
+
+
+              <div className=" pt-3 flex justify-center gap-6">
                 <Link to="https://linkedin.com/in/-sunny">
                   {" "}
-                  <BsLinkedin className="size-4 lg:size-10" />{" "}
+                  <BsLinkedin className="size-4 lg:size-8 text-[#0A66C2] bg-white rounded" />{" "}
                 </Link>
                 <Link to="https://github.com/ah-sunny">
                   {" "}
-                  <FaGithub className="size-4 lg:size-10" />{" "}
+                  <FaGithub className="size-4 lg:size-8" />{" "}
                 </Link>
-              </div> */}
+              </div>
+                <p className="font-mono text-sm flex justify-center tracking-[.35em]">Connect with me </p>
             </div>
 
             {/* contact for */}
-            <div className="w-full  border-t-8 rounded-3xl border-red-900 p-5">
+            <div className="w-full  border-t-4 rounded-3xl border-red-900 p-3">
               <div className="hero  text-black">
-                <div className="card bg-base-100 w-full shrink-0 shadow-2xl">
+                <div className="card bg-base-200 w-full shrink-0 shadow-2xl">
 
                   
                   <form onSubmit={onSubmit} className="card-body ">
@@ -99,12 +108,12 @@ const ContactMe = () => {
                       </label>
                     </div>
 
-                    <div className="form-control mb-2.5 ">
+                    <div className="form-control mb-2.5  ">
                       <label className="label">
                         <span className="label-text text-md text-black ">Email Address : </span>
                       </label>
                       <label className="floating-label mt-2  ">
-                        <span >Your Mail</span>
+                        <span className=" ">Your Mail</span>
                         <input type="text" name="email" placeholder="mail@site.com" className="input  border-b-4 w-full focus:outline-none " required />
                       </label>
                     </div>
