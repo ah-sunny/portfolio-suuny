@@ -47,7 +47,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end gap-3">
                     
-                    <Link  to="https://linkedin.com/in/-sunny" > <BsLinkedin className="size-4 lg:size-7" /> </Link>
+                    <Link  to="https://linkedin.com/in/-sunny" > <BsLinkedin className="size-4 lg:size-7 text-[#0A66C2] bg-white rounded" /> </Link>
                     <Link  to="https://github.com/ah-sunny" > <FaGithub className="size-4 lg:size-7" /> </Link>
                    
 

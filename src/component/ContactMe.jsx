@@ -49,7 +49,7 @@ const ContactMe = () => {
       </div>
 
       <div>
-        <div className="border-2 border-gray-700 p-3 lg:p-10 rounded-md w-auto lg:w-[90%] mx-auto mt-14 ">
+        <div className="border-2 border-gray-700 p-0 lg:p-10 rounded-md w-auto lg:w-[90%] mx-auto mt-14 ">
           {/* <h1 className="text-xl lg:text-3xl font-bold mb-7">
             Contact Me For More Info{" "}
           </h1> */}
@@ -61,19 +61,19 @@ const ContactMe = () => {
             <div className="w-full space-y-3 pt-4 ">
 
               <div className="space-y-0.5 p-4 gap-2 border-2 border-gray-200 rounded-md bg-[#FDDD5F1A] ">
-                <FaPhoneVolume className="text-green-800 size-11"/>
-                <p className="font-thin text-sm   ">Phone Number :</p>
-                <p className="text-lg">(+880) 1601707200 <span className="font-thin text-xs">(whatsapp)</span></p>
+                <FaPhoneVolume className="text-green-800 size-7 lg:size-11"/>
+                <p className="font-thin text-xs lg:text-sm   ">Phone Number :</p>
+                <p className="text-base lg:text-lg">(+880) 1601707200 <span className="font-thin text-xs">(whatsapp)</span></p>
               </div>
               <div className="space-y-0.5 p-4 gap-2 border-2 border-gray-200 rounded-md bg-[#2d75222b]">
-                <MdEmail className="text-yellow-700 size-11"/>
-                <p className="font-thin text-sm  ">Email :</p>
-                <p className="text-lg" >sunnycse03@gmail.com</p>
+                <MdEmail className="text-yellow-700 size-7 lg:size-11"/>
+                <p className="font-thin text-xs lg:text-sm  ">Email :</p>
+                <p className="text-base lg:text-lg" >sunnycse03@gmail.com</p>
               </div>
               <div className="space-y-0.5 p-4 gap-2 border-2 border-gray-200 rounded-md bg-[#629CF31A]">
-                <FaMapLocationDot className="text-gray-300 size-11"/>
-                <p className="font-thin text-sm  ">Location :</p>
-                <p className="text-lg">Nabinagar, Savar, Dhaka</p>
+                <FaMapLocationDot className="text-gray-300 size-7 lg:size-11"/>
+                <p className="font-thin text-xs lg:text-sm  ">Location :</p>
+                <p className="text-base lg:text-lg">Nabinagar, Savar, Dhaka</p>
               </div>
 
 
@@ -91,16 +91,16 @@ const ContactMe = () => {
             </div>
 
             {/* contact for */}
-            <div className="w-full  border-t-4 rounded-3xl border-red-900 p-3">
+            <div className="w-full  border-t-4 rounded-3xl border-red-900  p-3">
               <div className="hero  text-black">
                 <div className="card bg-base-200 w-full shrink-0 shadow-2xl">
 
                   
                   <form onSubmit={onSubmit} className="card-body ">
-                  <h1 className="text-4xl mb-10">Send Message</h1>
+                  <h1 className="text-xl lg:text-4xl mb-10">Send Message</h1>
                     <div className="form-control  mb-2.5 ">
                       <label className="label">
-                        <span className="label-text text-md text-black ">Full Name : </span>
+                        <span className="label-text text-sm lg:text-md text-black ">Full Name : </span>
                       </label>
                       <label className="floating-label mt-2  ">
                         <span >Name</span>
