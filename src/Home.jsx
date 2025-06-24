@@ -1,4 +1,5 @@
 import AboutMe from "./component/AboutMe"
+// import NavbarLite from "./component/Archrive/NavbarLite"
 // import Banner from "./component/Banner"
 import ContactMe from "./component/ContactMe"
 import MyProject from "./component/MyProject"
@@ -16,6 +17,7 @@ function Home() {
    
       <div className="container mx-auto  space-y-32  ">
         {/* <Banner></Banner> */}
+        
         <Photo></Photo>
         <Stats></Stats>
         <AboutMe></AboutMe>
