@@ -11,7 +11,9 @@ const Footer = () => {
                 <aside className="grid-flow-col items-center">
                 <a className=" text-xs lg:text-base uppercase font-bold flex gap-2 items-center">
                         <img className="size-7 lg:size-8 " src={logo} alt="logo" />
-                        Arafat Sunny</a>
+                       
+                         <span className="bg-gradient-to-r from-cyan-400 to-pink-600 bg-clip-text text-transparent -tracking-wide  ">Arafat Hossain Sani</span>
+                        </a>
                 </aside>
                 <div className="text-center mx-auto">
                     <p>Copyright © {new Date().getFullYear()} - All right reserved by Sunny</p>

@@ -6,8 +6,8 @@ import { FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
     return (
-        <div>
-            <div className="navbar text-white px-1 lg:px-12">
+        <div className="">
+            <div className="navbar text-white  bg-cyan-500 px-1 lg:px-12   ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -26,7 +26,7 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 font-bold text-black rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            className="menu menu-sm dropdown-content bg-base-100 font-bold text-white rounded-box z-[1] mt-3 w-52 p-2 shadow">
                             <li><NavLink to="/" >Home</NavLink></li>
                             <li><NavLink to="/projects" > Projects</NavLink></li>
                             <li><NavLink to="/about" >About</NavLink></li>
@@ -35,7 +35,8 @@ const Navbar = () => {
                     </div>
                     <a className="pl-1 lg:pl-5 text-xs lg:text-xl uppercase font-bold flex gap-2 items-center">
                         <img className="size-7 lg:size-8 " src={logo} alt="logo" />
-                        Arafat Sunny</a>
+                         
+                         <span className="bg-gradient-to-r from-green-600 to-pink-600 bg-clip-text text-transparent">Arafat Hossain</span> Sani </a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

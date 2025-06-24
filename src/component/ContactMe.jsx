@@ -43,8 +43,9 @@ const ContactMe = () => {
   return (
     <div className="text-gray-200 pb-10 ">
       <div>
-        <h1 className="w-auto  lg:w-[32%] text-lg lg:text-5xl font-bold text-center mx-auto my-5 border-b-2 border-dashed pb-4 ">
-          Get in Touch
+        <h1 className="w-auto  lg:w-[30%] text-lg lg:text-4xl font-bold text-center mx-auto my-5 border-b-2 border-dashed pb-4 ">
+          Get 
+          <span className="bg-gradient-to-r from-cyan-400 to-pink-600 bg-clip-text text-transparent -tracking-wide  "> in Touch</span> 
         </h1>
       </div>
 
@@ -97,10 +98,10 @@ const ContactMe = () => {
 
                   
                   <form onSubmit={onSubmit} className="card-body ">
-                  <h1 className="text-xl lg:text-4xl mb-10">Send Message</h1>
-                    <div className="form-control  mb-2.5 ">
+                  <h1 className="text-xl lg:text-4xl mb-10 text-slate-200">Send Message</h1>
+                    <div className="form-control  mb-2.5 text-white">
                       <label className="label">
-                        <span className="label-text text-sm lg:text-md text-black ">Full Name : </span>
+                        <span className="label-text text-sm lg:text-md text-sky-600 ">Full Name : </span>
                       </label>
                       <label className="floating-label mt-2  ">
                         <span >Name</span>
@@ -108,19 +109,19 @@ const ContactMe = () => {
                       </label>
                     </div>
 
-                    <div className="form-control mb-2.5  ">
+                    <div className="form-control mb-2.5 text-white ">
                       <label className="label">
-                        <span className="label-text text-md text-black ">Email Address : </span>
+                        <span className="label-text text-md text-sky-600 ">Email Address : </span>
                       </label>
-                      <label className="floating-label mt-2  ">
+                      <label className="floating-label mt-2 ">
                         <span className=" ">Your Mail</span>
                         <input type="text" name="email" placeholder="mail@site.com" className="input  border-b-4 w-full focus:outline-none " required />
                       </label>
                     </div>
 
-                    <div className="form-control mb-4">
+                    <div className="form-control mb-4 text-white">
                       <label className="label">
-                        <span className="label-text text-md text-black ">Your Message : </span>
+                        <span className="label-text text-md text-sky-600 ">Your Message : </span>
                       </label>
                       <label className="floating-label mt-2  ">
                         <span >message</span>

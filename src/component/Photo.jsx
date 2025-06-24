@@ -40,13 +40,17 @@ const Photo = () => {
     <div className="text-gray-200 my-20 p-3 lg:p-0 flex flex-col lg:flex-row justify-between  ">
       {/* text part */}
       <div className="w-auto lg:w-[60%] space-y-3 pt-2">
-        <h1 className="text-2xl lg:text-5xl font-extrabold">
-          I&apos;m Arafat Sunny <br />
-          <Typewriter
+        <h1 className="text-xl lg:text-5xl font-extrabold ">
+          I&apos;m 
+           <span className="bg-gradient-to-r from-green-600 to-pink-600 bg-clip-text text-transparent -tracking-wide  "> Arafat Hossain Sani</span> 
+          <br />  
+          <span className="text-2xl">
+            
+            <Typewriter
             words={[
               " A Front-End Developer ",
-              "Web Developer ",
-              "MERN stack Developer",
+              " Web Developer ",
+              " MERN stack Developer",
               " A Front-End Developer ",
             ]}
             loop={5}
@@ -56,31 +60,26 @@ const Photo = () => {
             deleteSpeed={30}
             delaySpeed={1000}
           />
+          </span>
         </h1>
 
         <p className="font-medium leading-7 pt-5">
           🔹 I&apos;m a dedicated web developer and versatile front-end
           developer with a passion for creating efficient and user-friendly web
-          applications. With a keen eye for detail and a commitment to quality,
-          I thrive in environments that challenge me to push the boundaries of
-          web development.
-          <br />
+          applications.
+          <br /> <br />
+
           🔹 I develop and maintain responsive, high-performance web
           applications that cater to the needs of modern users. My expertise
-          includes HTML, CSS, Tailwind, JavaScript, React.js, and Next.js,
-          enabling me to create visually appealing and interactive user
-          interfaces. In addition to front-end technologies, comprising
-          MongoDB, Express.js, React, and Node.js. This full-stack capability
-          allows me to build comprehensive solutions that integrate front-end
-          and back-end functionalities seamlessly.
+          includes HTML, CSS, Tailwind, JavaScript, React.js, and Next.js, extending to full-stack capabilities with MongoDB, Express.js, and Node.js for comprehensive solutions.
         </p>
 
         <div className="flex gap-3">
           <Link to="/contact-me">
-            <button className="btn btn-primary lg:text-xl">Contact me</button>
+            <button className="btn btn-primary lg:text-base">Contact me</button>
           </Link>
           <a href="../Resume.pdf" download="../Resume.pdf">
-            <button className="btn btn-primary btn-outline lg:text-xl p-1">
+            <button className="btn btn-primary btn-outline lg:text-sm p-4">
               Download Resume
               <FaDownload />
             </button>
@@ -99,7 +98,7 @@ const Photo = () => {
           }}
         >
           <motion.div 
-            className="absolute size-[370px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
+            className="absolute size-[230px] lg:size-[300px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
             initial={{ opacity: 0 }}
             animate={{
               opacity: 1,
@@ -116,7 +115,7 @@ const Photo = () => {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 506 506"
             fill="none"
-            className="w-[300px] lg:w-[506px] h-[300px] lg:h-[506px] mx-auto text-center z-50"
+            className="w-[300px] lg:w-[426px] h-[300px] lg:h-[436px] mx-auto text-center z-50"
           >
             {
               circleColors.map((color,index)=>(
