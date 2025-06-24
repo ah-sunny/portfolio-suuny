@@ -32,7 +32,7 @@ const NavbarLite = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 text-white rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                            className="menu menu-sm dropdown-content bg-black text-white rounded-box z-[1] mt-3 w-52 p-2 shadow"
                         >
                             <li><NavLink to="/" className={navItemClass}>Home</NavLink></li>
                             <li><NavLink to="/projects" className={navItemClass}>Projects</NavLink></li>
