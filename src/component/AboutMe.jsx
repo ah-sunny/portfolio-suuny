@@ -22,7 +22,7 @@ const AboutMe = () => {
     return (
         <div className="text-gray-200">
             <div>
-                <h1 className="w-auto lg:w-[20%] text2xl lg:text-4xl font-bold text-center mx-auto my-5 border-b-2 border-dashed pb-4 " >About
+                <h1 className="w-auto lg:w-[20%] text-3xl lg:text-4xl font-bold text-center mx-auto my-5 border-b-2 border-dashed pb-4 " >About
 
                     <span className="bg-gradient-to-r from-cyan-400 to-pink-600 bg-clip-text text-transparent -tracking-wide  "> me</span>
                 </h1>
@@ -66,8 +66,8 @@ const AboutMe = () => {
             {/* second part  */}
             <div className="mt-9">
 
-                <h1 className="text-2xl border-dashed border-b-2 pb-2 w-auto lg:w-[29%]">Education
-                    <span className="bg-gradient-to-r from-cyan-400 to-pink-600 bg-clip-text text-transparent -tracking-wide  "> Qualifications</span>
+                <h1 className="text-2xl border-dashed border-b-2 pb-2 w-auto lg:w-[29%] -tracking-widest lg:tracking-normal ">Education
+                    <span className="bg-gradient-to-r from-cyan-400 to-pink-600 bg-clip-text text-transparent -tracking-widest  "> Qualifications</span>
                 </h1>
                 <div className="mt-9 text-2xl" >
                     <Education></Education>

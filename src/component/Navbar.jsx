@@ -36,7 +36,7 @@ const Navbar = () => {
                     <a className="pl-1 lg:pl-5 text-xs lg:text-xl uppercase font-bold flex gap-2 items-center">
                         <img className="size-7 lg:size-8 " src={logo} alt="logo" />
                          
-                         <span className="bg-gradient-to-r from-green-600 to-pink-600 bg-clip-text text-transparent">Arafat Hossain</span> Sani </a>
+                         <span className= "hidden lg:block bg-gradient-to-r from-green-600 to-pink-600 bg-clip-text text-transparent">Arafat Hossain</span> Sani </a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

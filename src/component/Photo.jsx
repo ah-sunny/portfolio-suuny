@@ -40,11 +40,11 @@ const Photo = () => {
     <div className="text-gray-200 my-20 p-3 lg:p-0 flex flex-col lg:flex-row justify-between  ">
       {/* text part */}
       <div className="w-auto lg:w-[60%] space-y-3 pt-2">
-        <h1 className="text-xl lg:text-5xl font-extrabold ">
+        <h1 className="text-2xl lg:text-5xl font-extrabold ">
           I&apos;m 
            <span className="bg-gradient-to-r from-green-600 to-pink-600 bg-clip-text text-transparent -tracking-wide  "> Arafat Hossain Sani</span> 
           <br />  
-          <span className="text-2xl">
+          <span className="text-base lg:text-2xl">
             
             <Typewriter
             words={[
@@ -63,7 +63,7 @@ const Photo = () => {
           </span>
         </h1>
 
-        <p className="font-medium leading-7 pt-5">
+        <p className="font-medium lg:leading-7 pt-5 text-xs lg:text-base pb-3">
           🔹 I&apos;m a dedicated web developer and versatile front-end
           developer with a passion for creating efficient and user-friendly web
           applications.
@@ -74,12 +74,12 @@ const Photo = () => {
           includes HTML, CSS, Tailwind, JavaScript, React.js, and Next.js, extending to full-stack capabilities with MongoDB, Express.js, and Node.js for comprehensive solutions.
         </p>
 
-        <div className="flex gap-3">
+        <div className="flex flex-col lg:flex-row gap-3">
           <Link to="/contact-me">
-            <button className="btn btn-primary lg:text-base">Contact me</button>
+            <button className="w-full btn btn-primary lg:text-base ">Contact me</button>
           </Link>
           <a href="../Resume.pdf" download="../Resume.pdf">
-            <button className="btn btn-primary btn-outline lg:text-sm p-4">
+            <button className="w-full btn btn-primary btn-outline lg:text-sm p-4">
               Download Resume
               <FaDownload />
             </button>
@@ -88,7 +88,7 @@ const Photo = () => {
       </div>
 
       {/* image part */}
-      <div className="w-auto lg:w-[40%] rounded-xl">
+      <div className="w-auto lg:w-[40%] rounded-xl mt-7 lg:mt-auto">
         <motion.div 
           className="relative w-full "
           initial={{ opacity: 0 }}
@@ -98,7 +98,7 @@ const Photo = () => {
           }}
         >
           <motion.div 
-            className="absolute size-[230px] lg:size-[300px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
+            className="absolute size-[220px] lg:size-[300px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
             initial={{ opacity: 0 }}
             animate={{
               opacity: 1,

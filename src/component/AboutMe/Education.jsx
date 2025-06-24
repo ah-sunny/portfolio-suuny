@@ -7,9 +7,9 @@ const Education = () => {
         <div>
 
 
-            <ul className="timeline timeline-vertical">
+            <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical ">
                 <li>
-                    <div className="timeline-start timeline-box text-right bg-slate-800">2022-present <br />
+                    <div className="timeline-start timeline-box  text-left lg:text-right bg-slate-800 w-auto lg:w-full">2022-present <br />
                         B.Sc in Computer Science and enginering. <br />
 
                         National Institute of Textile engineering & Research. <br />
@@ -28,7 +28,7 @@ const Education = () => {
                     <div className="timeline-middle">
                         <img src={amritalogo} alt="niter logo" className="size-8" />
                     </div>
-                    <div className="timeline-end timeline-box text-left bg-slate-800">
+                    <div className="timeline-end timeline-box text-left bg-slate-800 w-auto lg:w-full">
                         2019-2021 <br />
                         Higher Secondary School Certificate<br />
 
@@ -44,7 +44,7 @@ const Education = () => {
                 {/* 3rd */}
                 <li>
                     <hr className="bg-primary" />
-                    <div className="timeline-start timeline-box text-right bg-slate-800">
+                    <div className="timeline-start timeline-box text-left lg:text-right bg-slate-800 w-auto lg:w-full">
                         2016-2019  <br />
                         Secondary School Certificate <br />
 
@@ -59,7 +59,7 @@ const Education = () => {
                     <div className="timeline-middle">
                         <img src={ssclogo} alt="niter logo" className="size-8" />
                     </div>
-                    {/* <hr className="bg-primary" /> */}
+                    <hr className="bg-primary" />
                 </li>
                 {/* 2nd */}
                 {/* <li>

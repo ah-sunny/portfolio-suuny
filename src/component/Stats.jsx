@@ -56,7 +56,7 @@ const Stats = () => {
               end={item.num}
               duration={5}
               delay={2}
-              className="stat-value text-6xl mb-3 text-outline text-transparent"
+              className="stat-value text-4xl lg:text-6xl mb-3 text-outline text-transparent"
               suffix="+"
             ></CountUp> 
             <div className="stat-title text-white text-lg lg:text-2xl font-extrabold -tracking-wider ">
