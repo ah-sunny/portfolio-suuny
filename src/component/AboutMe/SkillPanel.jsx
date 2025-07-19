@@ -1,4 +1,6 @@
 
+
+
 const skillsData = {
   'Back-end': [
     { name: 'Node.js', percent: 60 },

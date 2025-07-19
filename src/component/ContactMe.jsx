@@ -5,6 +5,8 @@ import { FaGithub, FaMapLocationDot, FaPhoneVolume } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
 
 const ContactMe = () => {
 
@@ -44,8 +46,8 @@ const ContactMe = () => {
     <div className="text-gray-200 pb-10 ">
       <div>
         <h1 className="w-auto  lg:w-[30%] text-lg lg:text-4xl font-bold text-center mx-auto my-5 border-b-2 border-dashed pb-4 ">
-          Get 
-          <span className="bg-gradient-to-r from-cyan-400 to-pink-600 bg-clip-text text-transparent -tracking-wide  "> in Touch</span> 
+          Get
+          <span className="bg-gradient-to-r from-cyan-400 to-pink-600 bg-clip-text text-transparent -tracking-wide  "> in Touch</span>
         </h1>
       </div>
 
@@ -59,20 +61,44 @@ const ContactMe = () => {
           <div className="w-full mx-auto  flex flex-col lg:flex-row gap-5 justify-between">
 
             {/* left side  */}
-            <div className="w-full space-y-3 pt-4 ">
+            {/* <motion.div
+
+                    initial={{ opacity: 0, x: 70 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{
+                        duration: 3,
+                        ease: "easeOut",
+
+                    }}
+                    viewport={{ once: true, amount: 0.15 }} // triggers once when 20% is visible
+                >
+                    <CardText3></CardText3>
+
+                </motion.div> */}
+            <motion.div
+              initial={{ opacity: 0, x: -70 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: 2.5,
+                ease: "easeOut",
+
+              }}
+              viewport={{ once: true, amount: 0.15 }} // triggers once when 20% is visible
+
+              className="w-full space-y-3 pt-4 ">
 
               <div className="space-y-0.5 p-4 gap-2 border-2 border-gray-200 rounded-md bg-[#FDDD5F1A] ">
-                <FaPhoneVolume className="text-green-800 size-7 lg:size-11"/>
+                <FaPhoneVolume className="text-green-800 size-7 lg:size-11" />
                 <p className="font-thin text-xs lg:text-sm   ">Phone Number :</p>
                 <p className="text-base lg:text-lg">(+880) 1601707200 <span className="font-thin text-xs">(whatsapp)</span></p>
               </div>
               <div className="space-y-0.5 p-4 gap-2 border-2 border-gray-200 rounded-md bg-[#2d75222b]">
-                <MdEmail className="text-yellow-700 size-7 lg:size-11"/>
+                <MdEmail className="text-yellow-700 size-7 lg:size-11" />
                 <p className="font-thin text-xs lg:text-sm  ">Email :</p>
                 <p className="text-base lg:text-lg" >sunnycse03@gmail.com</p>
               </div>
               <div className="space-y-0.5 p-4 gap-2 border-2 border-gray-200 rounded-md bg-[#629CF31A]">
-                <FaMapLocationDot className="text-gray-300 size-7 lg:size-11"/>
+                <FaMapLocationDot className="text-gray-300 size-7 lg:size-11" />
                 <p className="font-thin text-xs lg:text-sm  ">Location :</p>
                 <p className="text-base lg:text-lg">Nabinagar, Savar, Dhaka</p>
               </div>
@@ -88,17 +114,27 @@ const ContactMe = () => {
                   <FaGithub className="size-4 lg:size-8" />{" "}
                 </Link>
               </div>
-                <p className="font-mono text-sm flex justify-center tracking-[.35em]">Connect with me </p>
-            </div>
+              <p className="font-mono text-sm flex justify-center tracking-[.35em]">Connect with me </p>
+            </motion.div>
 
             {/* contact for */}
-            <div className="w-full  border-t-4 rounded-3xl border-red-900  p-3">
+            <motion.div
+              initial={{ opacity: 0, x: 70 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: 2.5,
+                ease: "easeOut",
+
+              }}
+              viewport={{ once: true, amount: 0.15 }} // triggers once when 20% is visible
+
+              className="w-full  border-t-4 rounded-3xl border-red-900  p-3">
               <div className="hero  text-black">
                 <div className="card bg-base-200 w-full shrink-0 shadow-2xl">
 
-                  
+
                   <form onSubmit={onSubmit} className="card-body ">
-                  <h1 className="text-xl lg:text-4xl mb-10 text-slate-200">Send Message</h1>
+                    <h1 className="text-xl lg:text-4xl mb-10 text-slate-200">Send Message</h1>
                     <div className="form-control  mb-2.5 text-white">
                       <label className="label">
                         <span className="label-text text-sm lg:text-md text-sky-600 ">Full Name : </span>
@@ -141,7 +177,7 @@ const ContactMe = () => {
                   <span>{result}</span>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
 
 

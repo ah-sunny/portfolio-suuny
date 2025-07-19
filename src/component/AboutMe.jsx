@@ -1,8 +1,11 @@
 
 import { useEffect, useState } from "react";
 import sunnyImg from "../assets/trans.png";
-import SkillPanel from "./AboutMe/SkillPanel";
+// import SkillPanel from "./AboutMe/SkillPanel";
 import Education from "./AboutMe/Education";
+import { motion } from "framer-motion";
+import SkillPanelAnimation from "./AboutMe/SkilPanelAnimation";
+
 
 const categories = ['Front-end', 'Back-end', 'Tools', 'Soft Skill'];
 
@@ -14,7 +17,7 @@ const AboutMe = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setActiveIndex((prev) => (prev + 1) % categories.length);
-        }, 1300); // 5 seconds
+        }, 1600); // 5 seconds
 
         return () => clearInterval(interval);
     }, []);
@@ -22,19 +25,37 @@ const AboutMe = () => {
     return (
         <div className="text-gray-200">
             <div>
-                <h1 className="w-auto lg:w-[20%] text-3xl lg:text-4xl font-bold text-center mx-auto my-5 border-b-2 border-dashed pb-4 " >About
+                <motion.h1
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{
+                        duration: 2,
+                        ease: "easeOut",
+
+                    }}
+                    viewport={{ once: true, amount: 0.15 }} // triggers once when 20% is visible
+                    className="w-auto lg:w-[20%] text-3xl lg:text-4xl font-bold text-center mx-auto my-5 border-b-2 border-dashed pb-4 " >About
 
                     <span className="bg-gradient-to-r from-cyan-400 to-pink-600 bg-clip-text text-transparent -tracking-wide  "> me</span>
-                </h1>
+                </motion.h1>
 
             </div>
 
             {/* first part */}
             <div className="flex flex-col lg:flex-row justify-between items-center gap-12  pt-10">
                 {/* left */}
-                <div className="w-[95%] lg:w-[40%]">
+                <motion.div
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{
+                        duration: 2,
+                        ease: "easeOut",
+                    }}
+                    viewport={{ once: true, amount: 0.15 }} // triggers once when 20% is visible
+
+                    className="w-[95%] lg:w-[40%]">
                     <img src={sunnyImg} alt="sani image" className="border-2 border-cyan-700 rounded-xl px-5 " />
-                </div>
+                </motion.div>
                 {/* right */}
                 <div className="w-[95%] lg:w-[60%] ">
                     {/* text  */}
@@ -56,7 +77,7 @@ const AboutMe = () => {
                         </h1>
                         <div>
                             {/* <h1>Front-End</h1> */}
-                            <SkillPanel category={categories[activeIndex]} />
+                            <SkillPanelAnimation category={categories[activeIndex]} />
                         </div>
                     </div>
 

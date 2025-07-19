@@ -1,14 +1,24 @@
 import niterlogo from "../../assets/niterlogo.png"
 import amritalogo from "../../assets/amritalogo1.png"
 import ssclogo from "../../assets/SSClogo.png"
+import { motion } from "framer-motion";
 
 const Education = () => {
     return (
         <div>
 
 
-            <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical ">
-                <li>
+            <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mb-5">
+                <motion.li
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{
+                        duration: 2,
+                        ease: "easeOut",
+
+                    }}
+                    viewport={{ once: true, amount: 0.2 }} // triggers once when 20% is visible
+                >
                     <div className="timeline-start timeline-box  text-left lg:text-right bg-slate-800 w-auto lg:w-full">2022-present <br />
                         B.Sc in Computer Science and enginering. <br />
 
@@ -21,9 +31,18 @@ const Education = () => {
                         <img src={niterlogo} alt="niter logo" className="size-8" />
                     </div>
                     <hr className="bg-primary" />
-                </li>
+                </motion.li>
                 {/* 2nd */}
-                <li>
+                <motion.li
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{
+                        duration: 2,
+                        ease: "easeOut",
+                        delay: 0.3
+                    }}
+                    viewport={{ once: true, amount: 0.2 }} // triggers once when 20% is visible
+                >
                     <hr className="bg-primary" />
                     <div className="timeline-middle">
                         <img src={amritalogo} alt="niter logo" className="size-8" />
@@ -40,9 +59,18 @@ const Education = () => {
 
                     </div>
                     <hr className="bg-primary" />
-                </li>
+                </motion.li>
                 {/* 3rd */}
-                <li>
+                <motion.li
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{
+                        duration: 2,
+                        ease: "easeOut",
+                        delay: 0.5
+                    }}
+                    viewport={{ once: true, amount: 0.2 }} // triggers once when 20% is visible
+                >
                     <hr className="bg-primary" />
                     <div className="timeline-start timeline-box text-left lg:text-right bg-slate-800 w-auto lg:w-full">
                         2016-2019  <br />
@@ -60,7 +88,7 @@ const Education = () => {
                         <img src={ssclogo} alt="niter logo" className="size-8" />
                     </div>
                     <hr className="bg-primary" />
-                </li>
+                </motion.li>
                 {/* 2nd */}
                 {/* <li>
                     <hr className="bg-primary" />

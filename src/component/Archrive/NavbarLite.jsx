@@ -2,11 +2,11 @@ import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const NavbarLite = () => {
     const navItemClass = ({ isActive }) =>
-        `px-2 py-1  transition-all duration-200 font-semibold ${
-            isActive ? " text-white border-b-2 border-blue-900" : "text-white"
+        `px-2 py-1  transition-all duration-200 font-semibold ${isActive ? " text-white border-b-2 border-blue-900" : "text-white"
         } hover:border-b-2 hover:text-base`;
 
     return (
@@ -41,32 +41,61 @@ const NavbarLite = () => {
                         </ul>
                     </div>
 
-                    <a className="pl-1 lg:pl-5 text-xs lg:text-xl uppercase font-bold flex gap-2 items-center">
+                    <motion.a
+                        initial={{ opacity: 0, x: -50 }} // start from below and invisible
+                        animate={{ opacity: 1, x: 0 }}   // end at original position, visible
+                        transition={{
+                            duration: 1.1,
+                            ease: "easeOut",
+
+                        }}
+
+                        className="pl-1 lg:pl-5 text-xs lg:text-xl uppercase font-bold flex gap-2 items-center">
                         <img className="size-7 lg:size-8" src={logo} alt="logo" />
                         <span className="hidden lg:block bg-gradient-to-r from-green-600 to-pink-600 bg-clip-text text-transparent">
                             Arafat Hossain
                         </span>
                         Sani
-                    </a>
+                    </motion.a>
                 </div>
 
-                <div className="navbar-center hidden lg:flex">
+                <motion.div
+                    initial={{ opacity: 0, y: -30 }} // start from below and invisible
+                    animate={{ opacity: 1, y: 0 }}   // end at original position, visible
+                    transition={{
+                        duration: 1.1,
+                        ease: "easeOut",
+
+                    }}
+
+                    className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         <li><NavLink to="/" className={navItemClass}>Home</NavLink></li>
                         <li><NavLink to="/projects" className={navItemClass}>Projects</NavLink></li>
                         <li><NavLink to="/about" className={navItemClass}>About</NavLink></li>
                         <li><NavLink to="/contact-me" className={navItemClass}>Contact</NavLink></li>
                     </ul>
-                </div>
+                </motion.div>
 
-                <div className="navbar-end gap-3">
+
+
+
+                <motion.div
+                    initial={{ opacity: 0, x: 50 }} // start from below and invisible
+                    animate={{ opacity: 1, x: 0 }}   // end at original position, visible
+                    transition={{
+                        duration: 1.1,
+                        ease: "easeOut",
+
+                    }}
+                    className="navbar-end gap-3">
                     <Link to="https://linkedin.com/in/-sunny" target="_blank" rel="noopener noreferrer">
                         <BsLinkedin className="size-4 lg:size-7 text-[#0A66C2] bg-white rounded" />
                     </Link>
                     <Link to="https://github.com/ah-sunny" target="_blank" rel="noopener noreferrer">
                         <FaGithub className="size-4 lg:size-7" />
                     </Link>
-                </div>
+                </motion.div>
             </div>
         </div>
     );
