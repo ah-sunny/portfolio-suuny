@@ -6,12 +6,12 @@ const Stats = () => {
   const [totalCommits, setTotalCommits] = useState(0);
   const [techCount, setTechCount] = useState(0);
 
- 
-
 
 
   const username = import.meta.env.VITE_Github_Uername 
   const token = import.meta.env.VITE_Github_Access_Token
+
+  
   useEffect(() => {
     const fetchGitHubStats = async () => {
       const query = `
