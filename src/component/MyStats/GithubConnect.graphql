@@ -1,0 +1,26 @@
+{
+  user(login: "ah-sunny") {
+    repositories(first: 100, privacy: PUBLIC) {
+      totalCount
+      nodes {
+        defaultBranchRef {
+          target {
+            ... on Commit {
+              history {
+                totalCount
+              }
+            }
+          }
+        }
+        language {
+          name
+        }
+        languages(first: 10) {
+          nodes {
+            name
+          }
+        }
+      }
+    }
+  }
+}

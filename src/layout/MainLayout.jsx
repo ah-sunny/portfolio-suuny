@@ -6,7 +6,7 @@ import NavbarLite from "../component/Archrive/NavbarLite";
 const MainLayout = () => {
   return (
     <div className="bg-white dark:bg-[#030014] ">
-      <div className="">
+      <div className="fixed w-full top-0 z-50">
         {/* <Navbar></Navbar> */}
         <NavbarLite></NavbarLite>
       </div>

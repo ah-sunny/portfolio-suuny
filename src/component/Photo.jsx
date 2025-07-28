@@ -38,9 +38,9 @@ const Photo = () => {
 
 
   return (
-    <div className="text-black dark:text-gray-200  my-20 p-3 lg:p-0 flex flex-col lg:flex-row justify-between  ">
+    <div className="text-black dark:text-gray-200 mt-16  -mb-10 lg:mb-20 p-3 lg:p-0 flex flex-col lg:flex-row justify-between  ">
       {/* text part */}
-      <div className="w-auto lg:w-[60%] space-y-3 pt-2">
+      <div className="w-auto lg:w-[60%] space-y-3 pt-2 lg:pt-12">
         <motion.h1 
         className="text-2xl lg:text-5xl font-extrabold "
           initial={{ opacity: 0, y: 45 }} // start from below and invisible
