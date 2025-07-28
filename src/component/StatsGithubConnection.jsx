@@ -6,8 +6,8 @@ const Stats = () => {
   const [totalCommits, setTotalCommits] = useState(0);
   const [techCount, setTechCount] = useState(0);
 
-  const username = "ah-sunny";
-  const token = "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" // ⚠️ keep private!
+  const username = import.meta.env.VITE_Github_Uername 
+  const token = import.meta.env.VITE_Github_Access_Token
 
   useEffect(() => {
     const fetchGitHubStats = async () => {
