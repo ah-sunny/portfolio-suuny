@@ -23,7 +23,7 @@ const AboutMe = () => {
     }, []);
 
     return (
-        <div className="text-gray-200">
+        <div className="text-black dark:text-gray-200">
             <div>
                 <motion.h1
                     initial={{ opacity: 0, y: 40 }}

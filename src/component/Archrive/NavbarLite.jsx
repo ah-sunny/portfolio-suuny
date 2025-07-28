@@ -3,15 +3,18 @@ import logo from "../../assets/logo.png";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
+// import { useEffect, useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 const NavbarLite = () => {
     const navItemClass = ({ isActive }) =>
         `px-2 py-1  transition-all duration-200 font-semibold ${isActive ? " text-white border-b-2 border-blue-900" : "text-white"
         } hover:border-b-2 hover:text-base`;
 
+
     return (
         <div>
-            <div className="navbar bg-cyan-500 px-1 lg:px-12 text-white">
+            <div className="navbar bg-cyan-500  px-1 lg:px-12 text-white">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -77,9 +80,6 @@ const NavbarLite = () => {
                     </ul>
                 </motion.div>
 
-
-
-
                 <motion.div
                     initial={{ opacity: 0, x: 50 }} // start from below and invisible
                     animate={{ opacity: 1, x: 0 }}   // end at original position, visible
@@ -89,6 +89,9 @@ const NavbarLite = () => {
 
                     }}
                     className="navbar-end gap-3">
+                    {/* theme controller  */}
+                    <ThemeToggle></ThemeToggle>
+
                     <Link to="https://linkedin.com/in/-sunny" target="_blank" rel="noopener noreferrer">
                         <BsLinkedin className="size-4 lg:size-7 text-[#0A66C2] bg-white rounded" />
                     </Link>

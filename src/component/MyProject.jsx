@@ -11,7 +11,7 @@ const MyProject = () => {
     return (
         <div >
             <div>
-                <h1 className="w-auto lg:w-[30%] text-2xl lg:text-4xl font-bold text-center mx-auto my-5 border-b-2 border-dashed pb-4 text-gray-200 " > My
+                <h1 className="w-auto lg:w-[30%] text-2xl lg:text-4xl font-bold text-center mx-auto my-5 border-b-2 border-dashed pb-4 text-black dark:text-gray-200 " > My
                     <span className="bg-gradient-to-r from-cyan-400 to-pink-600 bg-clip-text text-transparent -tracking-wide  "> Projects</span>
                 </h1>
 

@@ -9,10 +9,6 @@ import { motion } from "framer-motion";
 
 
 const ContactMe = () => {
-
-
-
-
   const [result, setResult] = React.useState("");
 
   const onSubmit = async (event) => {
@@ -43,9 +39,9 @@ const ContactMe = () => {
 
 
   return (
-    <div className="text-gray-200 pb-10 ">
+    <div className="text-black dark:text-gray-200 pb-10 ">
       <div>
-        <h1 className="w-auto  lg:w-[30%] text-lg lg:text-4xl font-bold text-center mx-auto my-5 border-b-2 border-dashed pb-4 ">
+        <h1 className="w-auto  lg:w-[30%] text-2xl lg:text-4xl font-bold text-center mx-auto my-5 border-b-2 border-dashed pb-4 ">
           Get
           <span className="bg-gradient-to-r from-cyan-400 to-pink-600 bg-clip-text text-transparent -tracking-wide  "> in Touch</span>
         </h1>
@@ -60,21 +56,7 @@ const ContactMe = () => {
 
           <div className="w-full mx-auto  flex flex-col lg:flex-row gap-5 justify-between">
 
-            {/* left side  */}
-            {/* <motion.div
-
-                    initial={{ opacity: 0, x: 70 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{
-                        duration: 3,
-                        ease: "easeOut",
-
-                    }}
-                    viewport={{ once: true, amount: 0.15 }} // triggers once when 20% is visible
-                >
-                    <CardText3></CardText3>
-
-                </motion.div> */}
+          
             <motion.div
               initial={{ opacity: 0, x: -70 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -98,7 +80,7 @@ const ContactMe = () => {
                 <p className="text-base lg:text-lg" >sunnycse03@gmail.com</p>
               </div>
               <div className="space-y-0.5 p-4 gap-2 border-2 border-gray-200 rounded-md bg-[#629CF31A]">
-                <FaMapLocationDot className="text-gray-300 size-7 lg:size-11" />
+                <FaMapLocationDot className="text-black dark:text-gray-300 size-7 lg:size-11" />
                 <p className="font-thin text-xs lg:text-sm  ">Location :</p>
                 <p className="text-base lg:text-lg">Nabinagar, Savar, Dhaka</p>
               </div>
@@ -134,8 +116,8 @@ const ContactMe = () => {
 
 
                   <form onSubmit={onSubmit} className="card-body ">
-                    <h1 className="text-xl lg:text-4xl mb-10 text-slate-200">Send Message</h1>
-                    <div className="form-control  mb-2.5 text-white">
+                    <h1 className="text-3xl lg:text-4xl mb-10 text-black ">Send Message</h1>
+                    <div className="form-control  mb-2.5 text-black ">
                       <label className="label">
                         <span className="label-text text-sm lg:text-md text-sky-600 ">Full Name : </span>
                       </label>
@@ -145,7 +127,7 @@ const ContactMe = () => {
                       </label>
                     </div>
 
-                    <div className="form-control mb-2.5 text-white ">
+                    <div className="form-control mb-2.5 text-black  ">
                       <label className="label">
                         <span className="label-text text-md text-sky-600 ">Email Address : </span>
                       </label>
@@ -155,7 +137,7 @@ const ContactMe = () => {
                       </label>
                     </div>
 
-                    <div className="form-control mb-4 text-white">
+                    <div className="form-control mb-4 text-black ">
                       <label className="label">
                         <span className="label-text text-md text-sky-600 ">Your Message : </span>
                       </label>

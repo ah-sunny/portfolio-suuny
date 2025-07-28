@@ -38,7 +38,7 @@ const Photo = () => {
 
 
   return (
-    <div className="text-gray-200 my-20 p-3 lg:p-0 flex flex-col lg:flex-row justify-between  ">
+    <div className="text-black dark:text-gray-200  my-20 p-3 lg:p-0 flex flex-col lg:flex-row justify-between  ">
       {/* text part */}
       <div className="w-auto lg:w-[60%] space-y-3 pt-2">
         <motion.h1 
@@ -100,7 +100,7 @@ const Photo = () => {
               Contact me
             </button>
           </Link>
-          <a href="/Front-End Developer Resume Of Sani.pdf" download>
+          <a href="/Front-End Developer Resume Of Sani.pdf" download="Front-End Developer Resume Of Sani">
             <button className="w-full btn btn-primary btn-outline lg:text-sm p-4 flex items-center justify-center gap-2">
               Download Resume
               <FaDownload />
@@ -108,20 +108,6 @@ const Photo = () => {
           </a>
         </motion.div>
 
-
-        {/* <div
-        
-        className="flex flex-col lg:flex-row gap-3">
-          <Link to="/contact-me">
-            <button className="w-full btn btn-primary lg:text-base ">Contact me</button>
-          </Link>
-          <a href="../../public/Front-End Developer Resume Of Sani.pdf" download="../../public/Front-End Developer Resume Of Sani.pdf">
-            <button className="w-full btn btn-primary btn-outline lg:text-sm p-4">
-              Download Resume
-              <FaDownload />
-            </button>
-          </a>
-        </div> */}
 
       </div>
 

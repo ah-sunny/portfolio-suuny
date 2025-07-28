@@ -61,7 +61,7 @@ export default function SkillPanelAnimation({ category }) {
   const skills = skillsData[category] || [];
 
   return (
-    <div className="w-full mt-4 rounded-2xl p-3 bg-[#0f0c2c]">
+    <div className="w-full mt-4 rounded-2xl p-3 bg-[#0f0c2c] text-white dark:text-black">
       <motion.h2
         className="text-xl font-semibold text-purple-400 mb-4 border-b border-green-500 pb-1"
         initial={{ opacity: 0, y: 10 }}

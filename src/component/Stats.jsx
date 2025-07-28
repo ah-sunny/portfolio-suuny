@@ -8,7 +8,7 @@ const Stats = () => {
     },
     {
       num: 44,
-      text: "Project Compleate",
+      text: "Project Complete",
     },
     {
       num: 12,
@@ -22,7 +22,7 @@ const Stats = () => {
 
   return (
     <div className="my-20 text-center w-full mx-auto  ">
-      <div className="stats w-full bg-[#030014] text-white stats-vertical lg:stats-horizontal shadow">
+      <div className="stats w-full bg-white dark:bg-[#030014] text-black dark:text-white stats-vertical lg:stats-horizontal shadow">
         {/* <div className="stat">
                     <div className="stat-value">1+</div>
                     <div className="stat-title text-white text-lg lg:text-3xl font-extrabold -tracking-wider ">Years of Experience</div>
@@ -51,15 +51,15 @@ const Stats = () => {
                 </div> */}
 
         {stats.map((item, index) => (
-          <div key={index} className="stat"> 
+          <div key={index} className="stat  "> 
             <CountUp
               end={item.num}
               duration={5}
               delay={2}
-              className="stat-value text-4xl lg:text-6xl mb-3 text-outline text-transparent"
+              className="stat-value text-4xl lg:text-6xl mb-3 text-outline dark:text-transparent "
               suffix="+"
             ></CountUp> 
-            <div className="stat-title text-white text-lg lg:text-2xl font-extrabold -tracking-wider ">
+            <div className="stat-title text-black dark:text-white text-lg lg:text-2xl font-extrabold -tracking-wider ">
               {item.text}
             </div>
           </div>
