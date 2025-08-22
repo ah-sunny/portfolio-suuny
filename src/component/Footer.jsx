@@ -20,9 +20,9 @@ const Footer = () => {
                 
                 </div>
                 <nav className="grid-flow-col gap-4 md:place-self-center justify-self-center md:justify-self-end">
-                <Link  to="https://linkedin.com/in/-sunny" > <BsLinkedin className="size-4 lg:size-6" /> </Link>
-                    <Link  to="https://github.com/ah-sunny" > <FaGithub className="size-4 lg:size-6" /> </Link>
-                   
+                <Link  to="https://linkedin.com/in/-sunny" > <BsLinkedin className="size-4 lg:size-6 text-[#0A66C2] bg-white rounded" /> </Link>
+                    <Link  to="https://github.com/ah-sunny" > <FaGithub className="size-4 lg:size-6  rounded" /> </Link>
+
                 </nav>
             </footer>
         </div>

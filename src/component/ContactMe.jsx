@@ -1,7 +1,7 @@
 // import { BsLinkedin } from "react-icons/bs";
 import React from "react";
 import { BsLinkedin } from "react-icons/bs";
-import { FaGithub, FaMapLocationDot, FaPhoneVolume } from "react-icons/fa6";
+import { FaGithub, FaMapLocationDot, FaPhoneVolume, FaCode, FaLaptopCode, FaServer, FaDesktop, FaPlug, FaBolt } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
@@ -69,17 +69,17 @@ const ContactMe = () => {
 
               className="w-full space-y-3 pt-4 ">
 
-              <div className="space-y-0.5 p-4 gap-2 border-2 border-gray-200 rounded-md bg-[#FDDD5F1A] ">
+              <div className="space-y-0.5 p-4 gap-2 border-2 border-gray-200 rounded-md bg-[#FDDD5F1A] transition-all duration-300 hover:shadow-lg hover:scale-105">
                 <FaPhoneVolume className="text-green-800 size-7 lg:size-11" />
                 <p className="font-thin text-xs lg:text-sm   ">Phone Number :</p>
                 <p className="text-base lg:text-lg">(+880) 1601707200 <span className="font-thin text-xs">(whatsapp)</span></p>
               </div>
-              <div className="space-y-0.5 p-4 gap-2 border-2 border-gray-200 rounded-md bg-[#2d75222b]">
+              <div className="space-y-0.5 p-4 gap-2 border-2 border-gray-200 rounded-md bg-[#2d75222b] transition-all duration-300 hover:shadow-lg hover:scale-105">
                 <MdEmail className="text-yellow-700 size-7 lg:size-11" />
                 <p className="font-thin text-xs lg:text-sm  ">Email :</p>
                 <p className="text-base lg:text-lg" >sunnycse03@gmail.com</p>
               </div>
-              <div className="space-y-0.5 p-4 gap-2 border-2 border-gray-200 rounded-md bg-[#629CF31A]">
+              <div className="space-y-0.5 p-4 gap-2 border-2 border-gray-200 rounded-md bg-[#629CF31A] transition-all duration-300 hover:shadow-lg hover:scale-105">
                 <FaMapLocationDot className="text-black dark:text-gray-300 size-7 lg:size-11" />
                 <p className="font-thin text-xs lg:text-sm  ">Location :</p>
                 <p className="text-base lg:text-lg">Nabinagar, Savar, Dhaka</p>
@@ -167,9 +167,81 @@ const ContactMe = () => {
         </div>
       </div>
 
-
-
-
+      {/* Service Offerings Section */}
+      <div className="mt-20">
+        <h1 className="w-auto lg:w-[30%] text-2xl lg:text-4xl font-bold text-center mx-auto my-5 border-b-2 border-dashed pb-4 ">
+          My
+          <span className="bg-gradient-to-r from-cyan-400 to-pink-600 bg-clip-text text-transparent -tracking-wide  "> Services</span>
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="flex flex-col items-center p-6 rounded-lg bg-white dark:bg-slate-800 shadow-lg text-center border-2 border-transparent transition-all duration-300 hover:border-cyan-400"
+          >
+            <FaCode className="text-5xl text-blue-500 mb-4" />
+            <h3 className="text-xl font-bold mb-2">Full-Stack Development</h3>
+            <p className="text-sm">Building end-to-end web applications using modern technologies.</p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="flex flex-col items-center p-6 rounded-lg bg-white dark:bg-slate-800 shadow-lg text-center border-2 border-transparent transition-all duration-300 hover:border-cyan-400"
+          >
+            <FaLaptopCode className="text-5xl text-green-500 mb-4" />
+            <h3 className="text-xl font-bold mb-2">Frontend Development</h3>
+            <p className="text-sm">Crafting engaging and responsive user interfaces with React and modern CSS frameworks.</p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="flex flex-col items-center p-6 rounded-lg bg-white dark:bg-slate-800 shadow-lg text-center border-2 border-transparent transition-all duration-300 hover:border-cyan-400"
+          >
+            <FaServer className="text-5xl text-red-500 mb-4" />
+            <h3 className="text-xl font-bold mb-2">Backend Development</h3>
+            <p className="text-sm">Developing robust server-side logic and APIs with Node.js and Express.js.</p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="flex flex-col items-center p-6 rounded-lg bg-white dark:bg-slate-800 shadow-lg text-center border-2 border-transparent transition-all duration-300 hover:border-cyan-400"
+          >
+            <FaDesktop className="text-5xl text-purple-500 mb-4" />
+            <h3 className="text-xl font-bold mb-2">Responsive Web Design</h3>
+            <p className="text-sm">Ensuring seamless user experience across all devices and screen sizes.</p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="flex flex-col items-center p-6 rounded-lg bg-white dark:bg-slate-800 shadow-lg text-center border-2 border-transparent transition-all duration-300 hover:border-cyan-400"
+          >
+            <FaPlug className="text-5xl text-orange-500 mb-4" />
+            <h3 className="text-xl font-bold mb-2">API Development & Integration</h3>
+            <p className="text-sm">Building and integrating robust APIs for seamless data flow.</p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="flex flex-col items-center p-6 rounded-lg bg-white dark:bg-slate-800 shadow-lg text-center border-2 border-transparent transition-all duration-300 hover:border-cyan-400"
+>
+            <FaBolt className="text-5xl text-cyan-500 mb-4" />
+            <h3 className="text-xl font-bold mb-2">Performance Optimization</h3>
+            <p className="text-sm">Optimizing web applications for speed and efficiency.</p>
+          </motion.div>
+        </div>
+      </div>
     </div>
   );
 };
